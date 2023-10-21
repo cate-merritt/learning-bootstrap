@@ -1,0 +1,133 @@
+<!DOCTYPE html> <! -- CREATES HTML DOCUMENT -- >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Bootstrap</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" /> 
+    <! -- LINKS TO BOOTSTRAP -- >
+</head>
+<body>
+    <! --    
+    Create a new website using HTML and Bootstrap. 
+    The website must include the following:
+    At least 2 pages.
+    A Bootstrap navbar, table, and form.
+    Bootstrap grid used throughout to format elements
+    Elements should stack vertically when the window is small -- >
+                
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+      <! -- NAVIGATION BAR WITH DARK THEME -- >
+            <div class="container"> 
+      <! -- NOT USING 'FLUID' HERE HELPS CENTER THE TEXT OF THE NAV BAR-- >
+              <a class="navbar-brand" href="#">Learning Bootstrap</a>
+      <! -- THIS CREATES THE CLASS OF NAV BAR AND RESPONSIVENESS -- >
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      <! -- THIS IS MY COLLAPSING TOGGLER BUTTON -- >
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="page2.html">Page 2</a>
+                  </li>
+                </ul>
+      <! -- NAVIGATE BETWEEN PAGES (2 REQUIRED)
+      HAMBURGER DROP DOWN WHEN SCREEN SMALL 
+      LIST WHEN SCREEN LARGE -- >
+              </div>
+            </div>
+          </nav>
+      <! -- NAV OVER DIV FOR ACCESSIBILITY REASONS -- >
+      
+            <div class="jumbotron text-center" style="margin-bottom:0">
+              <h1>Let's Learn About Bootstrap!</h1>
+              <h4>Bootstrap is used to create responsive pages</h4> 
+              <p>Resize this page and see what happens!</p>
+            </div> 
+      <! -- HEADING TEXT, CENTERED -- >
+      
+      <! -- BEGIN BOOTSTRAP GRID FORMATTING
+      CONTAINER, ROW, COLUMN -- >
+    <div class="container">
+      <div class="row text-center">
+              <div class="col-md-3">
+                <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/800px-Bootstrap_logo.svg.png" class="img-fluid" alt="bootstrap logo">
+                <br><br>
+                <p>Bootstrap is frontend framework that helps us build responsive websites. There are many fun styling components.
+                </p>
+              </div>
+              <div class="col-md-6">
+        <! -- BEGIN TABLE -- >
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Contextual Class</th>
+                      <th>Color</th>
+                      <th>Emoji</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="table-danger">
+                      <td>Danger</td>
+                      <td>Red</td>
+                      <td>idk</td>
+                    </tr>      
+                    <tr class="table-warning">
+                      <td>Warning</td>
+                      <td>Yellow</td>
+                      <td>idk lol</td>
+                    </tr>
+                    <tr class="table-success">
+                      <td>Success</td>
+                      <td>Red</td>
+                      <td>IDK</td>
+                    </tr>
+                    <tr class="table-success">
+                      <td>Success</td>
+                      <td>Green</td>
+                      <td>Haha</td>
+                    </tr>
+                    <tr class="table-primary">
+                      <td>Primary</td>
+                      <td>Blue</td>
+                      <td>Yeah Sure</td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <td>Secondary</td>
+                      <td>Gray</td>
+                      <td>Okay</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          <! -- LIST OF LINKS, COLORED -- >
+              <div class="col-md-3">
+                <ul class="list-group">
+                <li class="list-group-item"><a href="#" class="link-danger">Danger Link link</a></li>
+                <li class="list-group-item"><a href="#" class="link-warning">Warning link</a></li>
+                <li class="list-group-item"><a href="#" class="link-success">Success link</a></li>
+                <li class="list-group-item"><a href="#" class="link-primary">Primary link</a></li>
+                <li class="list-group-item"><a href="#" class="link-info">Info link</a></li>
+              </ul>
+              </div>
+            </div>
+    <! -- BEGIN FOOTER-- >
+            <footer>
+              <div class="jumbotron text-center" style="margin-bottom:0">
+              <br>
+              <p>The <a href="https://getbootstrap.com/docs/4.0/components/forms/#:~:text=Create%20horizontal%20forms%20with%20the,with%20their%20associated%20form%20controls.">Bootstrap Documentation</a>
+               is a great resource for learning more about forms</p>
+            </div>
+          </footer>
+    <! -- END FOOTER-- >
+
+    <! -- LINKS BOOTSTRAP TO PAGE -- >
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <! -- END HTML PAGE-- >
+</body>
+</html>

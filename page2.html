@@ -1,0 +1,110 @@
+<!DOCTYPE html> <! -- CREATES HTML DOCUMENT -- >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Bootstrap</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" /> <! -- LINKS BOOTSTRAP -- >
+</head>
+
+<! -- BEGIN BODY SECTION -- >
+<body>
+    <! --    
+        Create a new website using HTML and Bootstrap. 
+        The website must include the following:
+        At least 2 pages.
+        A Bootstrap navbar, table, and form.
+        Bootstrap grid used throughout to format elements
+        Elements should stack vertically when the window is small -- >
+
+    <! -- BEGIN NAV BAR -- >    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+          <! -- creates a navigation bar with responsive collapse
+          dark theme with light text -- >
+                <div class="container"> 
+          <! -- I chose to just use container instead of container-fluid
+          so the text of the navbar is aligned with the content of body-- >
+                  <a class="navbar-brand" href="#">Learning Bootstrap</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="page2.html">Page 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        <! -- END NAV BAR -- >   
+ 
+        <! -- HEADING TEXT, CENTERED -- >
+                <div class="jumbotron text-center" style="margin-bottom:0">
+                  <h1>Welcome To Page 2!</h1>
+                  <h4>This page follows the same grid as the home page.</h4> 
+                  <p>Resize this page and see what happens!</p>
+                </div>
+        <! -- BOOTSTRAP GRID FORMATTING -- >
+                <div class="container">
+                  <div class="row">
+                          <div class="col-md-3 text-center">
+                            <img src="https://bs-uploads.toptal.io/blackfish-uploads/components/seo/content/og_image_file/og_image/1130064/REDESIGN-Speeding-up-Application-Development-with-Bootstrap-Luke_Social-3b49f4c2abf94e39b2f311ed9f0c3785.png" class="img-fluid" alt="bootstrap logo">
+                            <br><br>
+                            <p>Bootstrap grid can help us design wepages quickly and eloquently.</p>
+                          </div>
+                          <div class="col-md-6 text-center">
+        <! -- BEGIN REQUIRED FORM, DISABLED FORM -- >
+                            <form>
+                              <fieldset disabled>
+                                <div class="form-group">
+                                  <label for="disabledTextInput">Put Nothing Here</label>
+                                  <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                                </div>
+                                <div class="form-group">
+                                  <label for="disabledSelect">Nothing Goes Here!</label>
+                                  <select id="disabledSelect" class="form-control">
+                                    <option>Select NOTHING</option>
+                                  </select>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+                                  <label class="form-check-label" for="disabledFieldsetCheck">
+                                    Can't check this
+                                  </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Do Not Submit</button>
+                              </fieldset>
+                            </form>
+          <! END REQUIRED FORM -- >
+                          </div>
+                          <div class="col-md-3">
+                            <ul class="list-group">
+                            <li class="list-group-item"><a href="#" class="link-danger">Danger Link link</a></li>
+                            <li class="list-group-item"><a href="#" class="link-warning">Warning link</a></li>
+                            <li class="list-group-item"><a href="#" class="link-success">Success link</a></li>
+                            <li class="list-group-item"><a href="#" class="link-primary">Primary link</a></li>
+                            <li class="list-group-item"><a href="#" class="link-info">Info link</a></li>
+                          </ul>
+                          </div>
+                        </div>
+          <! -- BOOTSTRAP GRID IN THREE COLUMNS
+          STACKS WHEN SCREEN SMALL -- >
+          
+          <! -- BEGIN FOOTER -- >
+                        <footer>
+                          <div class="jumbotron text-center" style="margin-bottom:0">
+                          <br>
+                          <p>The <a href="https://getbootstrap.com/docs/4.0/components/forms/#:~:text=Create%20horizontal%20forms%20with%20the,with%20their%20associated%20form%20controls.">Bootstrap Documentation</a>
+                           is a great resource for learning more about forms</p>
+                        </div>
+                      </footer>
+          <! -- END FOOTER -- >
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> <! -- ADDS BOOTSTRAP -- >
+          <! -- END HTML PAGE-- >
+  </body>
+</html>
